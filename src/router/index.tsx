@@ -1,5 +1,7 @@
 // import third-party modules
 import React, { lazy, Suspense, type ReactNode } from 'react';
+// import local modules
+import Base from '../layout/Base';
 
 const Home = lazy(() => import('../pages/Home'));
 const lazyLoad = (children: ReactNode) => {
@@ -12,8 +14,14 @@ const lazyLoad = (children: ReactNode) => {
 const router = [
   {
     path: "/",
-    element: lazyLoad(<Home />),
-  }
+    element: <Base />,
+    children: [
+      {
+        index: true,
+        element: lazyLoad(<Home />),
+      },
+    ]
+  },
 ]
 
 export default router

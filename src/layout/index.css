@@ -1,0 +1,21 @@
+.layout-Base {
+    min-height: 600px;
+}
+
+.layout-SiderBar-menu {
+    height: 100%
+}
+
+.layout-Header {
+    height: 60px;
+}
+
+.layout-ContenBar {
+    padding: 24px;
+    height: 100%;
+}
+
+.layout-FooterBar {
+    height: 60px;
+    text-align: center;
+}
