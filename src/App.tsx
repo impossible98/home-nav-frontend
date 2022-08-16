@@ -1,11 +1,10 @@
 // import third-party modules
 import React from 'react';
-import { useRoutes } from "react-router-dom";
 // import local modules
-import router from './router';
+import Router from '@/router';
 
 function App() {
-  return useRoutes(router)
+  return <Router />;
 }
 
-export default App
+export default App;

@@ -2,11 +2,11 @@
 import { Layout } from 'antd';
 import React from 'react';
 // import local modules
-import HeaderBar from './HeaderBar';
-import SiderBar from './SiderBar';
 import ContentBar from './ContentBar';
 import FooterBar from './FooterBar';
-import "./index.css";
+import HeaderBar from './HeaderBar';
+import SiderBar from './SiderBar';
+import './index.css';
 
 function Base() {
   return (
@@ -18,7 +18,7 @@ function Base() {
       </Layout>
       <FooterBar />
     </Layout>
-  )
+  );
 }
 
 export default Base;
