@@ -1,3 +1,4 @@
+// import third-party modules
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
